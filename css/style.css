@@ -1,0 +1,63 @@
+.banner, .mentions {
+    background-color : #5e6e5e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: .625em; /* équivalence "10px" sur l'élément racine */
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
+body {
+    font-size: 1.4em; /* taille de base pour tous les éléments équivalent 14px */
+    font-family: 'Roboto', sans-serif;
+}
+
+.gallery {
+    justify-content: center;
+    display: flex;
+    margin-top:25px
+}
+
+.gallery ul {
+    margin: 0 20px 0 0;
+    list-style-type: none;
+}
+
+.gallery li {
+    width: 75px;
+    padding: 3px;
+    margin: 5px 0;
+    border: 1px solid #5e6e5e;
+}
+
+.gallery li:first-child {
+    margin:0;
+}
+
+.gallery li:hover,
+.gallery li.selected
+{
+    background-color: #5e6e5e;
+}
+
+.gallery li:hover
+{
+    cursor: pointer;
+}
+
+.gallery ul img {
+    width: 100%;
+}
+
+.gallery picture {
+    width: 50%;
+    border: 1px solid #5e6e5e;
+}
+
+.gallery picture img {
+    transition: all .25s ease;
+}
